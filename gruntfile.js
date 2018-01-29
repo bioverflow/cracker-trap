@@ -19,6 +19,14 @@ module.exports = function (grunt) {
         },
         uglify: {
             CrackerTrapProductionMinJS: {
+				options:{
+					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+				'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+				drop_console: true,
+				mangle: {
+					reserved: ['debugger']
+				  }
+				},
                 files: {
                     './build/cracker-trap.min.js': './build/cracker-trap.ob.js'
                 }
