@@ -1,10 +1,4 @@
-/*
- * cracker-trap based on devtools-detect
- * Detect if web developer tools is open to hardening apps
- * https://github.com/bioverflow/cracker-trap
- * by Reverse Bytes
- * GPL 3.0
-*/
+/*! cracker-trap - v1.0.0 - 2018-01-29 */
 ((function () {
 	var devtools = {
 		open: false,

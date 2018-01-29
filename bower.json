@@ -1,0 +1,23 @@
+{
+  "name": "cracker-trap",
+  "description": "Detect if web developer tools is open to hardening apps",
+  "main": "index.js",
+  "authors": [
+    "Reverse Bytes"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "debug-trap",
+    "debugging-tool",
+    "enforcer",
+    "security-hardening"
+  ],
+  "homepage": "https://github.com/bioverflow/cracker-trap",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

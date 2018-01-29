@@ -4,7 +4,9 @@
 	"description": "Detect if web developer tools is open to hardening apps",
 	"main": "index.js",
 	"scripts": {
-		"test": "test"
+		"install-grunt": "npm install -g grunt-cli",
+		"build": "npm install && grunt",
+		"start": "grunt watch"
 	},
 	"repository": {
 		"type": "git",
@@ -22,5 +24,16 @@
 		"url": "https://github.com/bioverflow/cracker-trap/issues"
 	},
 	"homepage": "https://github.com/bioverflow/cracker-trap#readme",
-	"devDependencies": {}
+	"devDependencies": {
+		"bower": "^1.8.2",
+		"grunt": "^1.0.1",
+		"grunt-cli": "^1.2.0",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-obfuscator": "^4.0.0",
+		"grunt-contrib-uglify": "^3.3.0",
+		"grunt-contrib-watch": "^1.0.0",
+		"gzip-js": "0.3.2",
+		"load-grunt-tasks": "^3.5.2"
+	}
 }
