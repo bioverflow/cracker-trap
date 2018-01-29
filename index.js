@@ -6,11 +6,6 @@
  * MIT License
 */
 ((function () {
-	let _settings = {
-		showAlert: false,
-		redirectToURI: false,
-		uri: '',
-	};
 	const devtools = {
 		open: false,
 		orientation: null,
@@ -28,10 +23,6 @@
 			},
 		}));
 	};
-
-	function changeSettings(settings) {
-		_settings = settings;
-	}
 
 	function timeValidation() {
 		const startTime = new Date();
