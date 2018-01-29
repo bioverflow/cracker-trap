@@ -1,4 +1,4 @@
-# WebCrackerTrap
+# Cracker Trap
 Detect if web developer tools is opened and change natural flow of webapps, you can override to redirect to another web page, show an alert or limit your own code.
 
 ## Demo
@@ -14,9 +14,10 @@ $ npm install --save devtools-detect
 
 ## Usage
 
+### NPM module
 ```html
 <!-- 1) Insert on your own declarations-->
-<script src="node_modules/crackertrap/index.js"></script>
+<script src="node_modules/cracker-trap/build/cracker-trap.min.js"></script>
 <!-- 2) Use after declaration -->
 <script>
 	/// Single usage
