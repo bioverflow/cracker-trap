@@ -1,7 +1,7 @@
 /*
- * CrackerTrap based on devtools-detect
+ * cracker-trap based on devtools-detect
  * Detect if web developer tools is open to hardening apps
- * https://github.com/bioverflow/CrackerTrap
+ * https://github.com/bioverflow/cracker-trap
  * by Sindre Sorhus
  * MIT License
 */

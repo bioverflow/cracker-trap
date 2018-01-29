@@ -1,5 +1,5 @@
 {
-	"name": "crackertrap",
+	"name": "cracker-trap",
 	"version": "1.0.0",
 	"description": "Detect if web developer tools is open to hardening apps",
 	"main": "index.js",
@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bioverflow/CrackerTrap.git"
+		"url": "git+https://github.com/bioverflow/cracker-trap.git"
 	},
 	"keywords": [
 		"debug-trap",
@@ -19,19 +19,8 @@
 	"author": "Reverse Bytes",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/bioverflow/CrackerTrap/issues"
+		"url": "https://github.com/bioverflow/cracker-trap/issues"
 	},
-	"homepage": "https://github.com/bioverflow/CrackerTrap#readme",
-	"devDependencies": {
-		"eslint": "^4.16.0",
-		"eslint-config-airbnb": "^16.1.0",
-		"eslint-config-google": "^0.9.1",
-		"eslint-config-standard": "^11.0.0-beta.0",
-		"eslint-plugin-import": "^2.8.0",
-		"eslint-plugin-jsx-a11y": "^6.0.3",
-		"eslint-plugin-node": "^5.2.1",
-		"eslint-plugin-promise": "^3.6.0",
-		"eslint-plugin-react": "^7.6.1",
-		"eslint-plugin-standard": "^3.0.1"
-	}
+	"homepage": "https://github.com/bioverflow/cracker-trap#readme",
+	"devDependencies": {}
 }
