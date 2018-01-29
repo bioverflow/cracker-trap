@@ -1,6 +1,7 @@
 <h1>Cracker Trap: </h1>
 <p>Dev tools is opened?: <span id="is-open"></span></p>
 <p>Dev tools orientation:<span id="orientation"></span></p>
+<p>Dev tools is undocked?: <span id="is-undocked"></span></p>
 <script src="../index.js"></script>
 <script>
 	// check if it's open
@@ -12,5 +13,6 @@
 	window.addEventListener('onDevToolsChange', function (e) {
 		document.querySelector("#is-open").textContent = e.detail.open;
 		document.querySelector("#orientation").textContent = e.detail.orientation;
+		document.querySelector("#is-undocked").textContent = e.detail.undocked;
 	});
 </script>

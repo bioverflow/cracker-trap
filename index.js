@@ -10,20 +10,31 @@
 
 	var devtools = {
 		open: false,
-		orientation: null
+		orientation: null,
+		undocked: null
 	};
 	var threshold = 160;
 
-	/// Event to catch when devtools is opened or closed
-	var emitEvent = function (state, orientation) {
+	/// Emit an event when devtools status is changed
+	var emitEvent = function (state, orientation, undocked) {
 		window.dispatchEvent(new CustomEvent('onDevToolsChange', {
 			detail: {
 				open: state,
-				orientation: orientation
+				orientation: orientation,
+				undocked: undocked
 			}
 		}));
 	};
 
+	function timeValidation() {
+		var startTime = new Date();
+		debugger;
+		var endTime = new Date();
+
+		return endTime - startTime > 100;
+	}
+
+	/// Every half second check if developer tools is opened or not
 	setInterval(function () {
 		var widthThreshold = window.outerWidth - window.innerWidth > threshold;
 		var heightThreshold = window.outerHeight - window.innerHeight > threshold;
@@ -31,19 +42,27 @@
 
 		if (heightThreshold === true || widthThreshold === true) {
 			if (devtools.open === true || devtools.orientation !== orientation) {
-				emitEvent(true, orientation);
+				emitEvent(true, orientation, null);
 			}
 
 			devtools.open = true;
 			devtools.orientation = orientation;
-		} 
+			devtools.undocked = false;
+		}
 		else {
-			if (devtools.open) {
-				emitEvent(false, null);
+			if (timeValidation() == true) {
+				emitEvent(true, null, true);
+				devtools.undocked = true;
 			}
+			else {
+				if (devtools.open) {
+					emitEvent(false, null, null);
+				}
 
-			devtools.open = false;
-			devtools.orientation = null;
+				devtools.open = false;
+				devtools.orientation = null;
+				devtools.undocked = null;
+			}
 		}
 	}, 500);
 
