@@ -46,10 +46,12 @@
 			devtools.open = true;
 			devtools.orientation = orientation;
 			devtools.undocked = false;
-		} else if (timeValidation() === true) {
+		} 
+		else if (timeValidation() === true) {
 			emitEvent(true, null, true);
 			devtools.undocked = true;
-		} else {
+		} 
+		else {
 			if (devtools.open) {
 				emitEvent(false, null, null);
 			}
@@ -62,7 +64,8 @@
 
 	if (typeof module !== 'undefined' && module.exports) {
 		module.exports = devtools;
-	} else {
+	} 
+	else {
 		window.devtools = devtools;
 	}
 })());
