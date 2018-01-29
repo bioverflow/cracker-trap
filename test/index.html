@@ -1,18 +1,19 @@
 <h1>Cracker Trap: </h1>
-<p>Dev tools is opened?: <span id="is-open"></span></p>
-<p>Dev tools orientation:<span id="orientation"></span></p>
-<p>Dev tools is undocked?: <span id="is-undocked"></span></p>
+<p>Dev tools is opened?:
+  <span id="is-open"></span>
+</p>
+<p>Dev tools orientation:
+  <span id="orientation"></span>
+</p>
+<p>Dev tools is undocked?:
+  <span id="is-undocked"></span>
+</p>
 <script src="../index.js"></script>
 <script>
-	// check if it's open
-	console.log('is DevTools open?', window.devtools.open);
-	// check it's orientation, null if not open
-	console.log('and DevTools orientation?', window.devtools.orientation);
-
-	// get notified when it's opened/closed or orientation changes
-	window.addEventListener('onDevToolsChange', function (e) {
-		document.querySelector("#is-open").textContent = e.detail.open;
-		document.querySelector("#orientation").textContent = e.detail.orientation;
-		document.querySelector("#is-undocked").textContent = e.detail.undocked;
-	});
+  // get notified when it's opened/closed or orientation changes
+  window.addEventListener('onDevToolsChange', function (e) {
+    document.querySelector("#is-open").textContent = e.detail.open;
+    document.querySelector("#orientation").textContent = e.detail.orientation;
+    document.querySelector("#is-undocked").textContent = e.detail.undocked;
+  });
 </script>
