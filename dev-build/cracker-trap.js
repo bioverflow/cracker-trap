@@ -67,7 +67,7 @@
 			devtools.undocked = null;
 		}
 	}, 500);
-	console.log('alo');
+	
 	if (typeof module !== 'undefined' && module.exports) {
 		module.exports = devtools;
 	}
