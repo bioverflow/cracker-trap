@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 			}
 		},
 		watch: {
-			files: ['./src/*.js'],
+			files: ['./*.js'],
 			tasks: ['default']
 		},
 		obfuscator: {

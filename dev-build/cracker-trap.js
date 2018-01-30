@@ -9,13 +9,23 @@
 
 	// Emit an event when devtools status is changed
 	var emitEvent = function emitEvent(state, orientation, undocked) {
-		window.dispatchEvent(new CustomEvent('onDevToolsChange', {
-			detail: {
-				open: state,
-				orientation,
-				undocked,
-			},
-		}));
+		try {
+			window.dispatchEvent(new CustomEvent('onDevToolsChange', {
+				detail: {
+					open: state,
+					orientation: orientation,
+					undocked: undocked,
+				},
+			}));
+		} catch (e) {
+			var event = document.createEvent("CustomEvent");
+			event.initCustomEvent("onDevToolsChange", true, false, {
+				'open': state,
+				'orientation': orientation,
+				'undocked': undocked,
+			});
+			document.documentElement.dispatchEvent(event);
+		}
 	};
 
 	function timeValidation() {
@@ -42,11 +52,11 @@
 			devtools.open = true;
 			devtools.orientation = orientation;
 			devtools.undocked = false;
-		} 
+		}
 		else if (timeValidation() === true) {
 			emitEvent(true, null, true);
 			devtools.undocked = true;
-		} 
+		}
 		else {
 			if (devtools.open) {
 				emitEvent(false, null, null);
@@ -57,10 +67,10 @@
 			devtools.undocked = null;
 		}
 	}, 500);
-console.log('alo');
+	console.log('alo');
 	if (typeof module !== 'undefined' && module.exports) {
 		module.exports = devtools;
-	} 
+	}
 	else {
 		window.devtools = devtools;
 	}

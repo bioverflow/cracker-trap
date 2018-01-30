@@ -1,22 +1,23 @@
 <h1>Cracker Trap: </h1>
 <p>
-  Dev tools is opened?:
-  <span id="is-open"></span>
+	Dev tools is opened?:
+	<span id="is-open"></span>
 </p>
 <p>
-  Dev tools orientation:
-  <span id="orientation"></span>
+	Dev tools orientation:
+	<span id="orientation"></span>
 </p>
 <p>
-  Dev tools is undocked?:
-  <span id="is-undocked"></span>
+	Dev tools is undocked?:
+	<span id="is-undocked"></span>
 </p>
-<script src="../build/cracker-trap.min.js"></script>
+<script src="../build/cracker-trap.js"></script>
 <script>
-  // get notified when it's opened/closed or orientation changes
-  window.addEventListener('onDevToolsChange', function (e) {
-    document.querySelector("#is-open").textContent = e.detail.open;
-    document.querySelector("#orientation").textContent = e.detail.orientation;
-    document.querySelector("#is-undocked").textContent = e.detail.undocked;
-  });
+	// get notified when it's opened/closed or orientation changes
+	window.addEventListener('onDevToolsChange', function (e) {
+		console.log(e.detail);
+		document.querySelector("#is-open").textContent = e.detail.open;
+		document.querySelector("#orientation").textContent = e.detail.orientation;
+		document.querySelector("#is-undocked").textContent = e.detail.undocked;
+	});
 </script>

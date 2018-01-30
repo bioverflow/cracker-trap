@@ -41,12 +41,11 @@ $ npm install --save devtools-detect
 ## Support
 
 - Chrome DevTools
-- Safari DevTools
+- Edge DevTools
 - Firefox DevTools
 - Opera DevTools
 - Firebug
-- Firebug Lite
-- Internet Explorer
+- Internet Explorer 11 DevTools
 
 ## License
 
