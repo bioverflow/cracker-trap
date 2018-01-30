@@ -33,6 +33,7 @@
 		"grunt-contrib-obfuscator": "^4.0.0",
 		"grunt-contrib-uglify": "^3.3.0",
 		"grunt-contrib-watch": "^1.0.0",
+		"grunt-replace": "^1.0.1",
 		"gzip-js": "0.3.2",
 		"load-grunt-tasks": "^3.5.2"
 	}
