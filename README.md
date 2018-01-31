@@ -10,8 +10,9 @@ Detect if web developer tools is opened and change natural flow of webapps, you 
 
 ## Install
 
+### NPM
 ```
-$ npm install --save devtools-detect
+$ npm install --save cracker-trap
 ```
 
 ## Usage
