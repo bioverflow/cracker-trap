@@ -1,7 +1,7 @@
 // get notified when it's opened/closed or orientation changes
 window.addEventListener('onDevToolsChange', function (e) {
   console.log(e.detail)
-  
+
   if (e.detail.open) {
     document.querySelector('#banner').textContent = 'Your app may be hacked'
     document.querySelector('#banner').classList.remove('secure')

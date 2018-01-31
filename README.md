@@ -4,9 +4,9 @@
 Detect if web developer tools is opened and change natural flow of webapps, you can override to redirect to another web page, show an alert or limit your own code.
 
 ## Demo
-* Basic: [https://bioverflow.github.io/tools/cracker-trap/basic/](https://bioverflow.github.io/tools/cracker-trap/basic/)
-* Message: [https://bioverflow.github.io/tools/cracker-trap/alert/](https://bioverflow.github.io/tools/cracker-trap/alert/)
-* Redirect: [https://bioverflow.github.io/tools/cracker-trap/redirect/](https://bioverflow.github.io/tools/cracker-trap/redirect/)
+* Basic: [https://bioverflow.github.io/tools/cracker-trap/basic/index.html](https://bioverflow.github.io/tools/cracker-trap/basic/index.html)
+* Message: [https://bioverflow.github.io/tools/cracker-trap/alert/index.html](https://bioverflow.github.io/tools/cracker-trap/alert/index.html)
+* Redirect: [https://bioverflow.github.io/tools/cracker-trap/redirect/index.html](https://bioverflow.github.io/tools/cracker-trap/redirect/index.html)
 
 ## Install
 
