@@ -1,23 +1,41 @@
-<h1>Cracker Trap: </h1>
-<p>
-	Dev tools is opened?:
-	<span id="is-open"></span>
-</p>
-<p>
-	Dev tools orientation:
-	<span id="orientation"></span>
-</p>
-<p>
-	Dev tools is undocked?:
-	<span id="is-undocked"></span>
-</p>
-<script src="../build/cracker-trap.min.js"></script>
-<script>
-	// get notified when it's opened/closed or orientation changes
-	window.addEventListener('onDevToolsChange', function (e) {
-		console.log(e.detail);
-		document.querySelector("#is-open").textContent = e.detail.open;
-		document.querySelector("#orientation").textContent = e.detail.orientation;
-		document.querySelector("#is-undocked").textContent = e.detail.undocked;
-	});
-</script>
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cracker Trap - Test</title>
+  <meta name="description" content="Cracker Trap test">
+  <meta name="author" content="Reverse Bytes">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <h1>Cracker Trap</h1>
+  </header>
+  <section class="container">
+    <section class="banner" id="banner">Try opening the console</section>
+    <p>Is opened?:
+      <span id="is-open"></span>
+    </p>
+    <p>Is undocked?:
+      <span id="is-undocked"></span>
+    </p>
+    <p>Orientation:
+      <span id="orientation"></span>
+    </p>
+  </section>
+
+  <script src="../build/cracker-trap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

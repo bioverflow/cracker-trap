@@ -1,0 +1,50 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #2a2929;;
+  color: #dddcdc;
+}
+
+h1{
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 100!important;
+  font-size: 5em;
+}
+
+.container{
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+.container p {
+  font-weight: 400;
+  color: #9b9b9b;
+}
+
+.container span {
+  font-weight: 100;
+  text-transform: capitalize;
+  color: #a78c08;
+}
+
+.banner{
+  text-align: center;
+}
+
+.banner.hacked{
+  color: #c4ad06;
+}
+
+.banner.secure{
+  color: #0e89b8;
+}
