@@ -6,7 +6,8 @@
 	"scripts": {
 		"install-grunt": "npm install -g grunt-cli",
 		"build": "npm install && grunt",
-		"start": "grunt watch"
+		"start": "grunt watch",
+		"test": "./node_modules/.bin/standard \"index.js\""
 	},
 	"repository": {
 		"type": "git",
@@ -35,6 +36,7 @@
 		"grunt-contrib-watch": "^1.0.0",
 		"grunt-replace": "^1.0.1",
 		"gzip-js": "0.3.2",
-		"load-grunt-tasks": "^3.5.2"
+		"load-grunt-tasks": "^3.5.2",
+		"standard": "^10.0.3"
 	}
 }

@@ -1,4 +1,6 @@
 # Cracker Trap
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 Detect if web developer tools is opened and change natural flow of webapps, you can override to redirect to another web page, show an alert or limit your own code.
 
 ## Demo
@@ -46,6 +48,10 @@ $ npm install --save devtools-detect
 - Opera DevTools
 - Firebug
 - Internet Explorer 11 DevTools
+
+## Standard
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 ## License
 
