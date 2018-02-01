@@ -10,6 +10,19 @@ Detect if web developer tools is opened and change natural flow of webapps, you 
 
 ## Install
 
+### CDN
+
+* https://cdn.rawgit.com/bioverflow/cracker-trap/29aa09f8/build/cracker-trap.min.js
+* https://bundle.run/cracker-trap@1.0.2/build/cracker-trap.min.js
+* https://cdn.jsdelivr.net/npm/cracker-trap@1.0.2/build/cracker-trap.min.js
+* https://unpkg.com/cracker-trap@1.0.2/build/cracker-trap.min.js
+
+### Yarn
+
+```
+$ yarn add cracker-trap
+```
+
 ### NPM
 ```
 $ npm install --save cracker-trap
