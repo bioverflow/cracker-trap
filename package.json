@@ -1,6 +1,6 @@
 {
 	"name": "cracker-trap",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"description": "Detect if web developer tools is open to hardening apps",
 	"main": "index.js",
 	"scripts": {
@@ -9,10 +9,7 @@
 		"start": "grunt watch",
 		"test": "./node_modules/.bin/standard \"index.js\""
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bioverflow/cracker-trap.git"
-	},
+	"repository": "git+https://github.com/bioverflow/cracker-trap.git",
 	"keywords": [
 		"debug-trap",
 		"debugging-tool",
@@ -38,5 +35,6 @@
 		"gzip-js": "0.3.2",
 		"load-grunt-tasks": "^3.5.2",
 		"standard": "^10.0.3"
-	}
+	},
+	"private": false
 }
