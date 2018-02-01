@@ -30,7 +30,7 @@ $ npm install --save cracker-trap
 
 ## Usage
 
-**Always** use _cracker-trap.min.js_ file, this is inside build folder
+**Always** use _cracker-trap.min.js_ file, which is in the build folder
 
 
 ```html
