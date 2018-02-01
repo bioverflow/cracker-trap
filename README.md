@@ -30,10 +30,12 @@ $ npm install --save cracker-trap
 
 ## Usage
 
-### NPM module
+**Always** use _cracker-trap.min.js_ file, this is inside build folder
+
+
 ```html
 <!-- 1) Insert on your own declarations-->
-<script src="node_modules/cracker-trap/build/cracker-trap.min.js"></script>
+<script src="YOUR_ASSETS_PATH/cracker-trap/build/cracker-trap.min.js"></script>
 <!-- 2) Use after declaration -->
 <script>
 	/// Single usage
