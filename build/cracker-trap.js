@@ -1,4 +1,4 @@
-/*! cracker-trap - v1.0.3 - 2018-02-02 */
+/*! cracker-trap - v1.0.9 - 2018-02-02 */
 /*
  * cracker-trap based on devtools-detect
  * Detect if web developer tools is open to hardening apps

@@ -1,6 +1,6 @@
 {
 	"name": "cracker-trap",
-	"version": "1.0.3",
+	"version": "1.0.9",
 	"description": "Detect if web developer tools is open to hardening apps",
 	"main": "index.js",
 	"scripts": {
