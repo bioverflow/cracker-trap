@@ -7,8 +7,8 @@
 		"install-grunt": "npm install -g grunt-cli",
 		"build": "npm install && grunt",
 		"start": "grunt watch",
-    "test": "./node_modules/.bin/standard \"index.js\"",
-    "publish": "yarn publish"
+		"test": "./node_modules/.bin/standard \"index.js\"",
+		"publish": "yarn publish"
 	},
 	"repository": "git+https://github.com/bioverflow/cracker-trap.git",
 	"keywords": [
