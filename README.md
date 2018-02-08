@@ -3,6 +3,14 @@
 
 Detect if web developer tools is opened and change natural flow of webapps, you can override to redirect to another web page, show an alert or limit your own code.
 
+## Ok, but.. what does this?
+
+Return next states in a global defined object or DOM event:
+
+* Developer Tools is opened: Boolean <true|false>
+* Developer Tools position: String <"horizontal"|"vertical">
+* Developer Tools is undocked (in separated window): Boolean <true|false>
+
 ## Demo
 * Basic: [https://bioverflow.github.io/tools/cracker-trap/basic/index.html](https://bioverflow.github.io/tools/cracker-trap/basic/index.html)
 * Message: [https://bioverflow.github.io/tools/cracker-trap/alert/index.html](https://bioverflow.github.io/tools/cracker-trap/alert/index.html)
