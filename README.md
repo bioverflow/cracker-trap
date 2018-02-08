@@ -15,6 +15,7 @@ Return next states in a global defined object or DOM event:
 * Basic: [https://bioverflow.github.io/tools/cracker-trap/basic/index.html](https://bioverflow.github.io/tools/cracker-trap/basic/index.html)
 * Message: [https://bioverflow.github.io/tools/cracker-trap/alert/index.html](https://bioverflow.github.io/tools/cracker-trap/alert/index.html)
 * Redirect: [https://bioverflow.github.io/tools/cracker-trap/redirect/index.html](https://bioverflow.github.io/tools/cracker-trap/redirect/index.html)
+* Destroy content: [https://bioverflow.github.io/tools/cracker-trap/destroy/index.html](https://bioverflow.github.io/tools/cracker-trap/destroy/index.html)
 
 ## Install
 
