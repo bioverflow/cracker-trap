@@ -1,15 +1,15 @@
 # Cracker Trap
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.org/bioverflow/cracker-trap.svg?branch=master)](https://travis-ci.org/bioverflow/cracker-trap)
 
-Detect if web developer tools is opened and change natural flow of webapps, you can override to redirect to another web page, show an alert or limit your own code.
+Detect if web developer tools is opened and change natural flow on your own web apps, you can override to redirect to another web page, show an alert, limit your own code or whatever when a possible cracker is detected.
 
 ## Ok, but.. what does this?
 
 Return next states in a global defined object or DOM event:
 
-* Developer Tools is opened: Boolean <true|false>
-* Developer Tools position: String <"horizontal"|"vertical">
-* Developer Tools is undocked (in separated window): Boolean <true|false>
+* **Developer Tools is opened:** _Boolean <true | false>_
+* **Developer Tools position:** _String <horizontal | vertical>_
+* **Developer Tools is undocked (in separated window):** _Boolean < true | false >_
 
 ## Demo
 * Basic: [https://bioverflow.github.io/tools/cracker-trap/basic/index.html](https://bioverflow.github.io/tools/cracker-trap/basic/index.html)
@@ -64,7 +64,7 @@ $ npm install --save cracker-trap
 </script>
 ```
 
-## Support
+## DevTools Supported
 
 - Chrome DevTools
 - Edge DevTools
